@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Language Translator</title>
+    <link rel="stylesheet" href="Translator.css">
+    <!-- Material Icon Cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="select-box">
+            <div class="from-input-box">
+                <input type="text" class="from-input" value="English" data-country="en-GB" readonly>
+                <i class="material-symbols-outlined">
+                    arrow_drop_down
+                </i>
+            </div>
+            <div class="switch-btn">
+                <i class="material-symbols-outlined">
+                    repeat
+                </i>
+            </div>
+            <div class="to-input-box">
+                <input type="text" class="to-input" value="Turkish" data-country="tr-TR" readonly>
+                <i class="material-symbols-outlined">
+                    arrow_drop_down
+                </i>
+            </div>
+        </div>
+        <div class="from-options">
+            <!-- insert all countries code in this div -->
+
+        </div>
+        <div class="to-options">
+            <!-- insert all countries code in this div -->
+             
+        </div>
+        <div class="from-text-box box">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter text"></textarea>
+            <div class="btns">
+                <i class="material-symbols-outlined copy-btn" onclick="copyFromText()">
+                    content_copy
+                </i>
+                <i class="material-symbols-outlined from-speak" onclick="speakFromText()">
+                    volume_up
+                </i>
+            </div>
+        </div>
+
+        <div class="to-text-box box">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Translation"></textarea>
+            <div class="btns">
+                <i class="material-symbols-outlined copy-btn" onclick="copyToText()">
+                    content_copy
+                </i>
+                <i class="material-symbols-outlined from-speak" onclick="speakToText()">
+                    volume_up
+                </i>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="countries.js"></script>
+<script src="Translator.js"></script>
+
+
+</body>
+</html>
